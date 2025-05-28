@@ -1,0 +1,31 @@
+{
+    "variables": {
+      "storage_request_container": "",
+      "provide_additional_details": "",
+      "locker_storage_assignment": "**To be populated by FAC-OPS Personnel only**",
+      "storage_request_type": "",
+      "universal_watch_list_storage": "",
+      "u_floor": "14",
+      "storage_item_details": "",
+      "requested_for": "8077f15733239a506c59a3570e5c7b84",
+      "help_type": "locker",
+      "locker_bank": "17S345",
+      "locker_number": "",
+      "formatter": "undefined",
+      "formatter3": "undefined",
+      "universal_watch_list": "",
+      "storage_team_relation": "",
+      "formatter2": "undefined",
+      "u_workspace": "FLEX",
+      "storage_team_space": "",
+      "other_storage_request_container": "",
+      "u_location": "RH - Raanana",
+      "other_storage_space_need_issue": "",
+      "locker_request_container": "true",
+      "locker_request_type": "request_dedicated_locker",
+      "locker_size": "locker_medium"
+    },
+    "sysparm_item_guid": "ba853b9393bd22587df0bfbd1dba1149",
+    "get_portal_messages": "true",
+    "sysparm_no_validation": "true"
+}
