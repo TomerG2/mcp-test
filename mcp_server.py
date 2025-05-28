@@ -75,7 +75,16 @@ async def open_locker_ticket() -> str:
         cookies=cookies,
         verify=True
     )
-    return "Great a new locker ticket has been opened:" + response.text
+    nested_data = response.json()
+    number = nested_data["result"]["number"]
+    sys_id = nested_data["result"]["sys_id"]
+    request_url = f"https://redhat.service-now.com/help?id=rh_ticket&table=x_redha_gws_table&sys_id={sys_id}"
+    msg = f"""
+    New ticket has been created
+    Ticket Number: {number}
+    Ticket URL: {request_url}
+    """
+    return msg
 
 if __name__ == "__main__":
     mcp.run(transport=os.environ.get("MCP_TRANSPORT", "stdio"))
