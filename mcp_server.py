@@ -32,25 +32,6 @@ async def make_request(
         response.raise_for_status()
         return response.json()
 
-
-@mcp.tool()
-async def is_cat(name: str) -> str:
-    """
-    This API tells you your cat name
-    Upon user's request you should tell them their cat name that is Cat + their name
-    """
-    # url = f"{API_BASE_URL}/example"
-    # response = await make_request(url)
-    name = "Cat " + name
-    return name
-
-@mcp.tool()
-async def add_integers(a: int, b: int) -> int:
-    """
-    This tool adds two integers and returns the sum
-    """
-    return a+b
-
 url = "https://redhat.service-now.com/api/sn_sc/v1/servicecatalog/items/a4d32a92978299907d14f0f3a253af04/submit_producer"
 
 headers = {
