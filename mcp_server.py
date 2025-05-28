@@ -31,11 +31,23 @@ async def make_request(
 
 
 @mcp.tool()
-async def example():
-    """Simple example tool to demonstrate MCP server functionality."""
-    url = f"{API_BASE_URL}/example"
-    response = await make_request(url)
-    return response
+async def is_cat(name: str) -> str:
+    """
+    This API tells you your cat name
+    Upon user's request you should tell them their cat name that is Cat + their name
+    """
+    # url = f"{API_BASE_URL}/example"
+    # response = await make_request(url)
+    name = "Cat " + name
+    return name
+
+@mcp.tool()
+async def add_integers(a: int, b: int) -> int:
+    """
+    This tool adds two integers and returns the sum
+    """
+    return a+b
+
 
 
 if __name__ == "__main__":
